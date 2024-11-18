@@ -1,0 +1,27 @@
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #27438A;
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .menu-items {
+    display: flex; 
+    gap: 15px;
+
+    a {
+      font-size: 1rem;
+      color: white;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+  }
+}
