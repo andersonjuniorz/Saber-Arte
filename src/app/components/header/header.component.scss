@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+/* --------------- NAVBAR ----------------- */
 mat-toolbar {
+  background-color: #27438A;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #27438A;
+  height: 80px;
+
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
     color: white;
+    margin-left: 15px;
+    font-family: 'Irish Grover', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 10px 10px 12px rgba(0, 0, 0, 0.5);
   }
 
   .spacer {
@@ -22,6 +30,14 @@ mat-toolbar {
       color: white;
       text-transform: capitalize;
       font-weight: 500;
+    }
+
+    button{
+      margin-left: 80px;
+      margin-right: 20px;
+      padding: 10px 40px 10px 40px;
+      border-radius: 10px;
+      background-image: linear-gradient(to bottom, #BE2C9A, #620C85);
     }
   }
 }

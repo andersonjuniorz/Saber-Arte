@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <span class="logo">Saber & Arte</span>
+  <span class="logo">SABOR & ARTE</span>
 
   <nav class="menu-items">
     <a mat-button href="#about">Sobre</a>
@@ -9,3 +9,8 @@
     <button mat-raised-button color="accent">Reservas</button>
   </nav>
 </mat-toolbar>
+
+<app-carousel 
+  [images]="images"
+  [autoSlide]="true">
+</app-carousel>
