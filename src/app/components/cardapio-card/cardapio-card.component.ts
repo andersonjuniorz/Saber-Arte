@@ -1,12 +1,14 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cardapio-card',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './cardapio-card.component.html',
   styleUrl: './cardapio-card.component.scss'
 })
+
 export class CardapioCardComponent {
 
   @Input() imageSrc: string='';

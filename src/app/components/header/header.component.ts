@@ -19,8 +19,8 @@ import { CarouselComponent } from '../carousel/carousel.component';
 
 export class HeaderComponent {
   images = [
-    { imageSrc: '/BannerSlide1.png', imageAlt: 'pratos' },
-    { imageSrc: '/BannerSlide2.png', imageAlt: 'pratos' },
-    { imageSrc: '/BannerSlide3.png', imageAlt: 'sushi'  },
+    { imageSrc: '/BannerSlide1.png', imageAlt: 'Prato 1', width: 1200, height: 800 },
+    { imageSrc: '/BannerSlide2.png', imageAlt: 'Prato 2', width: 1200, height: 800 },
+    { imageSrc: '/BannerSlide3.png', imageAlt: 'Sushi',   width: 1200, height: 800 },
   ];
 }

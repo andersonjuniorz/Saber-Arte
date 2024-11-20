@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 
@@ -7,11 +7,13 @@ import { MatGridListModule } from '@angular/material/grid-list';
   standalone: true,
   imports: [
     CommonModule,
+    NgOptimizedImage,
     MatGridListModule
   ],
   templateUrl: './gallery.component.html',
   // styleUrl: './gallery.component.scss'
 })
+
 export class GalleryComponent {
   @Input() galleryImages: any[] = [];
 }

@@ -3,9 +3,11 @@
     
     <img 
         *ngFor="let image of images; let i = index"
-        [src]="image.imageSrc" [alt]="image.imageAlt"
+        [ngSrc]="image.imageSrc" [alt]="image.imageAlt"
         [ngClass]="{'image-active': selectedIndex === i}"
         class="fade"
+        [width]="image.width" [height]="image.height"
+        priority
     >
 
     <!-- Dots -->
@@ -14,7 +16,7 @@
         *ngFor="let dot of images; let i=index"
         class="dot"
         [ngClass]="{'active': selectedIndex === i}"
-        (click)="selectedImage(i)"        
+        (click)="selectedImage(i)" 
         ></span>
     </div>
 

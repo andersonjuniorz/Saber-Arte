@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
@@ -9,12 +9,14 @@ import { Inject, PLATFORM_ID } from '@angular/core';
 interface CarouselImages {
   imageSrc: string;
   imageAlt: string;
+  width: number;
+  height: number;
 }
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CommonModule, FontAwesomeModule],
+  imports: [CommonModule, FontAwesomeModule, NgOptimizedImage],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss'
 })
