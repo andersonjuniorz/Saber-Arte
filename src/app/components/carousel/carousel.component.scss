@@ -17,6 +17,7 @@
 }
 
 /* ----------------- DOTS/INDICATORS ------------------ */
+
 .carousel-dot-container{
     position: absolute;
     right: 0;
@@ -40,7 +41,7 @@
 }
 .active,
 .dot:hover{
-opacity: 1;
+    opacity: 1;
 }
 
 .btn-carousel{
@@ -83,7 +84,6 @@ opacity: 1;
 
 /* ----------------- EFFECTS ------------------ */
 
-//image effect
 .fade{
     animation-name: fade;
     animation-duration: 1.5s;

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 /* --------------- NAVBAR ----------------- */
+
 mat-toolbar {
   background-color: #27438A;
   display: flex;
@@ -37,6 +38,7 @@ mat-toolbar {
       margin-right: 20px;
       padding: 10px 40px 10px 40px;
       border-radius: 10px;
+      color: #fff;
       background-image: linear-gradient(to bottom, #BE2C9A, #620C85);
     }
   }

@@ -1,0 +1,9 @@
+<mat-grid-list cols="5" rowHeight="200px" gutterSize="12px">
+    <mat-grid-tile *ngFor="let tile of galleryImages"
+                   [colspan]="tile.cols"
+                   [rowspan]="tile.rows"
+                   [style.background]="tile.color">
+      <img [src]="tile.imageSrc" alt="Image" class="gallery-image" />
+    </mat-grid-tile>
+  </mat-grid-list>
+  

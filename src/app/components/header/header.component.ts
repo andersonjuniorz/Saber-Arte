@@ -7,7 +7,12 @@ import { CarouselComponent } from '../carousel/carousel.component';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatToolbarModule, MatMenuModule, MatButtonModule, CarouselComponent],
+  imports: [
+    MatToolbarModule, 
+    MatMenuModule, 
+    MatButtonModule, 
+    CarouselComponent
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

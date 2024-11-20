@@ -1,47 +1,69 @@
-<!-- <app-header></app-header> -->
+<app-header></app-header>
 
 <main>
-    <!-- Quem Somos -->
-    <!-- <section class="about-container">
-        <h2>Quem Somos?</h2>
-        <p>No restaurante Sabor & Arte, a culinária se transforma em uma verdadeira obra de arte. Localizado em um ambiente acolhedor, nosso espaço é mais do que um simples restaurante; é um ponto de encontro onde sabores e criatividade se entrelaçam, proporcionando experiências gastronômicas únicas.</p>
-    </section> -->
+  <!-- Quem Somos -->
+  <section id="about-container">
+      <h2>Quem Somos?</h2>
+      <p>No restaurante Sabor & Arte, a culinária se transforma em uma verdadeira obra de arte. Localizado em um ambiente acolhedor, nosso espaço é mais do que um simples restaurante; é um ponto de encontro onde sabores e criatividade se entrelaçam, proporcionando experiências gastronômicas únicas.</p>
+  </section>
 
-    <!-- <section class="cardapio-container">
+  <section id="cardapio-container">
 
-      <h2>CARDÁPIO</h2>
+    <h2>CARDÁPIO</h2>
 
-      Loop dos cards
-      <app-cardapio-card
-        *ngFor="let image of cardapioImages"
-        [imageSrc]="image.imageSrc"
-        [imageAlt]="image.imageAlt"
-        [name]="image.name"
-        [price]="image.price">
-      </app-cardapio-card>
+    <app-cardapio-card
+      *ngFor="let image of cardapioImages"
+      [imageSrc]="image.imageSrc"
+      [imageAlt]="image.imageAlt"
+      [name]="image.name"
+      [price]="image.price">
+    </app-cardapio-card>
     
     <button>Saiba mais</button>
-  </section> -->
+  </section>
 
-  <!-- <section class="promotion-container">
+  <section class="promotion-container">
     <div class="promotion-background">
+        
         <h2>PROMOÇÃO</h2>
 
         <div class="promotion-text">
           <span>Obtenha 2<br> pelo preço de 1</span>
         </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- Galeria -->
+   <section id="gallery">
+      <h2>Galeria</h2>
+     <app-gallery [galleryImages]="GalleryImages"></app-gallery>
+   </section>
 
-  
   <!-- Contato -->
-  <!-- <app-contact-form></app-contact-form> -->
+  <section id="contact-form-container">
 
-  <!-- Footer -->
-  <!-- <app-footer></app-footer> -->
+    <div class="contact-form">
+      <h2>ENTRE EM CONTATO</h2>
+    
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" placeholder="Meu nome..."><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="meuemail@example.com"><br>
+    
+        <label for="subject">Assunto:</label>
+        <textarea name="subject" id="subject" placeholder="Assunto..."></textarea><br>
+      </div>
+    
+      <div class="form-buttons">
+        <button type="reset" class="btn-reset">Limpar</button>
+        <button type="submit" class="btn-submit">Enviar</button>
+      </div>
+    </div>
 
+  </section>
 </main>
 
-
+<!-- Footer -->
+<app-footer></app-footer>
