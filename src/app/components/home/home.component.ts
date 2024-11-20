@@ -3,11 +3,12 @@ import { HeaderComponent } from '../header/header.component';
 import { CardapioCardComponent } from '../cardapio-card/cardapio-card.component';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, FooterComponent, CardapioCardComponent],
+  imports: [CommonModule, HeaderComponent, FooterComponent, CardapioCardComponent, ContactFormComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
